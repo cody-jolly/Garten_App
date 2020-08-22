@@ -1,0 +1,11 @@
+#inspired by "Build a PHP MVC Application" form Codecourse https://www.youtube.com/watch?v=OsCTzGASImQ
+#turn off MultiViews searches
+Options -MultiViews
+RewriteEngine On
+
+#look for directory and filenames
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#combine query strings and add them to index.php
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

@@ -1,0 +1,17 @@
+{
+  "name": "cody.jolly/garten_app",
+  "authors": [
+    {
+      "name": "C.Jolly",
+      "email": "57634721+cody-jolly@users.noreply.github.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.5",
+  }
+}
