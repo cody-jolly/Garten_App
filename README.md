@@ -1,19 +1,19 @@
-#Garten App 
+# Garten App 
 an automatic vegetable garden planner
 
-##Table of Contents
+## Table of Contents
 
-* [Summary](#Summary)
-* [Functionality](#Functionality)
-* [Technologies](#Technologies)
-* [Code Examples](#Code Examples)
-    * [MVC Methodology](#MVC Methodology)
-    * [Garden Calculation](#Garden Calculation)
-    * [API Communication](#API Communication)
-* [Database Diagram](#Database Diagram)
-* [Status](#Status)
+* [Summary](# Summary)
+* [Functionality](# Functionality)
+* [Technologies](# Technologies)
+* [Code Examples](# Code Examples)
+    * [MVC Methodology](# MVC Methodology)
+    * [Garden Calculation](# Garden Calculation)
+    * [API Communication](# API Communication)
+* [Database Diagram](# Database Diagram)
+* [Status](# Status)
 
-###Summary
+### Summary
 This is a vegetable garden planning tool, used to generate garden plans based on user input.
 User information such as growing space available, preferred vegetable varieties, and household size are converted 
 into a workable garden plan, through the use of general varietal data. Location information is used to collect weather data, 
@@ -22,14 +22,14 @@ which enables climate specific planning (feature still in development).
 Everyone should be able to get exercise and eat healthier by working in a garden to grow a bit of their own veg. 
 This App aims to assist people in doing so.
 
-###Installation
+### Installation
 Once downloaded, the App needs to be configure for the local environment. 
 
 * In app/Core/View the variable $rootpath needs to be adjusted to the local rootpath. 
 * The Database.sql file needs to be set up on your server's database.
 * In app/Models/Database the variables $host, $username, $password, $dbName need to be changed accordingly for the local database connection.
 
-###Functionality
+### Functionality
 The app design uses Model View Controller and Object Oriented Programming methodology. Users inform themselves about the app
 in the unprotected pages "Home" and "Über Uns"(About Us). Here there are multiple possibilities to register for and log in to the App.
 Logging in gives users access to the protected pages "Dashboard", "Anbauplan"(Production Plan), and Ernteplan(Harvest Plan) as well
@@ -46,7 +46,7 @@ which will list tasks to be completed in the garden in week, month, and year for
 A Wetterübersicht(weather overview) utilizes information from the openweathermap.org api to generate a daily forecast for the
 user's location. Future functionality here will utilize climate information to plan the garden year accordingly. 
 
-###Technologies
+### Technologies
 All this is accomplished through the use of php, html, css, javascript, and mySQL. The user interfaces are built with a 
 custom adaptation of the bootstrap framework from https://getbootstrap.com/. Interactivity and communication is facilitated 
 through the use of the jquery framework from https://jquery.com/. Back-end functionality is implemented with php 7.4.9 
@@ -55,8 +55,8 @@ The openweathermap.org api https://openweathermap.org/api is utilized to retriev
 api is carried out using the PHP HTTP client Guzzle https://github.com/guzzle. Composer https://getcomposer.org/
 is used to simplify the process of including and requiring classes throughout the App.
 
-###Code Examples
-####MVC Methodology
+### Code Examples
+#### MVC Methodology
 The use of MVC methodology allows for added security in the server-side areas of the app, this in combination with OOP techniques
 provide a simplified separation of concerns throughout the project. URL requests in public/index.php are handled through a router in the App.php class, here they are 
 converted into paths, controllers, methods and parameters as applicable.`
@@ -254,7 +254,7 @@ Bed Model:
     
 ```
 
-####Garden Calculation
+#### Garden Calculation
 The Garden Model handles all necessary database communication and calculations pertaining to the garden. This calculateVegProduction
 method generates the garden plan from user input tables, and is thus the crux of the App's functionality.
 
@@ -314,7 +314,7 @@ public function calculateVegProduction()
          }
      }
 ```
-####API Communication
+#### API Communication
 API data and various internal data and files can be called through the Controllers/Src/ directory Controllers using parameters to 
 specify which data or file should be rendered in what manner. This achieved through a combination of javascript and php. 
 Api communication with the openweathermap.org api occurs through the PHP HTTP client Guzzle https://github.com/guzzle. 
@@ -404,11 +404,11 @@ Weather Model:
    }
 ```
 
-###Database Diagram
+### Database Diagram
 The following diagram exhibits the Database structure for the App.
 ![picture alt](./DBDiagram.png)
 
-###Status
+### Status
 This App is still in development. To meet the deadline of the Summative Assignment, I decided to cut development of 
 several aspects short in this version. Text for all interfaces needs to be completed, as well as a much more extensive varietal 
 selection in the vegData table. The planned Task model and correlating controller and views will enhance the practical 
