@@ -3,15 +3,15 @@ an automatic vegetable garden planner
 
 ## Table of Contents
 
-* [ Summary ](# Summary)
-* [ Functionality ](# Functionality)
-* [ Technologies ](# Technologies)
-* [ Code Examples ](# Code Examples)
-    * [ MVC Methodology ](# MVC Methodology)
-    * [ Garden Calculation ](# Garden Calculation)
-    * [API Communication](# API Communication)
-* [Database Diagram](# Database Diagram)
-* [Status](# Status)
+* [summary](#summary)
+* [functionality](#functionality)
+* [technologies](#technologies)
+* [code examples](#code-examples)
+    * [mvc methodology](#mvc-methodology)
+    * [garden calculation](#garden-calculation)
+    * [api communication](#api-communication)
+* [database diagram](#database-diagram)
+* [status](#status)
 
 ### Summary
 This is a vegetable garden planning tool, used to generate garden plans based on user input.
