@@ -3,12 +3,12 @@ an automatic vegetable garden planner
 
 ## Table of Contents
 
-* [Summary](# Summary)
-* [Functionality](# Functionality)
-* [Technologies](# Technologies)
-* [Code Examples](# Code Examples)
-    * [MVC Methodology](# MVC Methodology)
-    * [Garden Calculation](# Garden Calculation)
+* [ Summary ](# Summary)
+* [ Functionality ](# Functionality)
+* [ Technologies ](# Technologies)
+* [ Code Examples ](# Code Examples)
+    * [ MVC Methodology ](# MVC Methodology)
+    * [ Garden Calculation ](# Garden Calculation)
     * [API Communication](# API Communication)
 * [Database Diagram](# Database Diagram)
 * [Status](# Status)
