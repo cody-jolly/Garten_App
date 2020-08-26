@@ -321,8 +321,8 @@ function updateGP() {
                 });
             } else {
                 householdSize.addClass('border-danger');
+                showAlert('3', 'Bitte vervollständigen Sie alle Angaben.');
             }
-            showAlert('3', 'Bitte vervollständigen Sie alle Angaben.');
         });
 }
 
