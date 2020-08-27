@@ -6,7 +6,7 @@ foreach ($data[0] as $variety) {?>
             <p>Gesamtkulturfläche im Garten: <?= $data[1][$variety->getVegDataId()] ?> qm</p>
             <p>Anzahl Aussaatsfolgen: <?= $data[2][$variety->getVegDataId()] ?></p>
             <p>Kulturdauer (Wochen): <?= $variety->getWeeksToMaturity() ?></p>
-            <p>Quadratmeter / Portion: <?= ceil($variety->getQcmPerServing() / 10000) ?></p>
+            <p>Quadratmeter / Portion: <?= round($variety->getQcmPerServing() / 10000, 2) ?></p>
             <p>Max. niedrige Temperatur: <?= $variety->getLowTemp() ?></p>
         </div>
     </div>
